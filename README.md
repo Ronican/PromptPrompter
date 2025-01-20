@@ -118,27 +118,3 @@ enhancer = PromptEnhancer(
 ### Examples
 
 Check out the [examples](examples) folder for detailed usage examples.
-
-### Uploading to PyPI
-
-To upload the package to PyPI, follow these steps:
-
-1. **Install `twine`**:
-   ```bash
-   pip install twine
-   ```
-
-2. **Build the Package**:
-   ```bash
-   python -m build
-   ```
-
-3. **Upload the Package**:
-   ```bash
-   twine upload dist/*
-   ```
-
-4. **Provide PyPI Credentials**:
-   - You will be prompted to enter your PyPI username and password. Make sure you have the necessary permissions to upload packages to the PyPI repository.
-
-By following these steps, you should be able to set up and use the PromptPrompter package effectively.
