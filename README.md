@@ -35,6 +35,15 @@ print(final_response)
 
 You can set environment variables (`OPENAI_API_KEY`, `GEMINI_API_KEY`) or pass them as arguments when initializing the class or function.
 
+## Available OpenAI Models
+
+The following OpenAI models can be used with the `PromptEnhancer` class:
+
+- `gpt-4o`
+- `gpt-4o-mini`
+- `o1`
+- `o1-mini`
+
 ## Contributing
 
 Contributions are welcome! Please read the [CONTRIBUTING.md](CONTRIBUTING.md) file for details on how to propose changes or submit pull requests.
@@ -49,7 +58,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yourusername/PromptPrompter.git
+   git clone https://github.com/Ronican/PromptPrompter.git
    cd PromptPrompter
    ```
 
@@ -110,30 +119,26 @@ enhancer = PromptEnhancer(
 
 Check out the [examples](examples) folder for detailed usage examples.
 
-### Creating a GitHub Repository
+### Uploading to PyPI
 
-1. **Create a New Repository on GitHub**:
-   - Go to [GitHub](https://github.com) and create a new repository.
+To upload the package to PyPI, follow these steps:
 
-2. **Initialize the Repository**:
+1. **Install `twine`**:
    ```bash
-   git init
-   git remote add origin https://github.com/yourusername/PromptPrompter.git
+   pip install twine
    ```
 
-3. **Add Files**:
+2. **Build the Package**:
    ```bash
-   git add .
+   python -m build
    ```
 
-4. **Commit Changes**:
+3. **Upload the Package**:
    ```bash
-   git commit -m "Initial commit"
+   twine upload dist/*
    ```
 
-5. **Push to GitHub**:
-   ```bash
-   git push -u origin main
-   ```
+4. **Provide PyPI Credentials**:
+   - You will be prompted to enter your PyPI username and password. Make sure you have the necessary permissions to upload packages to the PyPI repository.
 
 By following these steps, you should be able to set up and use the PromptPrompter package effectively.

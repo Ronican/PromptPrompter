@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "PromptPrompter"
 version = "0.1.0"
 authors = [
-    { name="Your Name", email="your.email@example.com" }
+    { name="Roni Can Şahin", email="sahin.ronican@gmail.com" }
 ]
 description = "A Python package for prompt enhancement and multi-model interaction with OpenAI and Gemini."
 readme = "README.md"
@@ -18,9 +18,11 @@ classifiers = [
 ]
 dependencies = [
     "requests",
-    "httpx"
+    "httpx",
+    "google-generativeai",
+    "openai"
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/yourusername/PromptPrompter"
-"Bug Tracker" = "https://github.com/yourusername/PromptPrompter/issues"
+"Homepage" = "https://github.com/Ronican/PromptPrompter"
+"Bug Tracker" = "https://github.com/Ronican/PromptPrompter/issues"
